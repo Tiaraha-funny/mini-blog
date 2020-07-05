@@ -1,6 +1,6 @@
 console.log('it works');
 
-// dragging the HTML to access the elements if it is neccessary
+// dragging the HTML to access the elements if it is neccessary and add the new postwhich is identified with the id of post-list.
 
 const postListDiv = document.getElementById('post-list');
 const submitButton = document.getElementById('submit-form');
@@ -34,7 +34,7 @@ postListDiv.appendChild(newDivSpace);
 newHeading.textContent = 'My Second Article';
 newParagraph.textContent = 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived.';
 
-//Submit our submit button by clicking the submit button.
+//Submit our submit button by clicking the submit button and reset the form after the submission
 
 const transportResult = `${heading} \n ${paragraph}`;
 
