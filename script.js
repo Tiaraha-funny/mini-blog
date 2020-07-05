@@ -42,3 +42,20 @@ submitButton.addEventListener('click', ($event) => {
   transportResult.textContent = $event.target.value;
   document.querySelector('form').reset();
 });
+
+
+// the second question
+
+const spanResult = document.getElementsByTagName('span');
+
+spanResult.addEventListener('change', ($event) => {
+  if ($event.target.checked === true) {
+    spanResult.children[0].classList.add('badge-light');
+  } if ($event.target.checked === true) {
+    spanResult.children[1].classList.add('badge-light');
+  } if ($event.target.checked === true) {
+    spanResult.children[2].classList.add('badge-light');
+  } else {
+    hobbiesResult.classList.remove('badge-light');
+  }
+});
